@@ -28,7 +28,7 @@ Por estas razones, recomendamos **usar siempre kebab-case para nombres de evento
 
 > Nuevo en la versión 2.2.0+
 
-Por defecto, `v-model` en un componente usa `value` como una prop e `input` como el evento, pero algunos tipos de entrada como los checkboxes y radio buttons pueden querer usar el atributo `value` para un [propósito diferente](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Value). Usando la opción `model` puede evitar conflictos en estos casos:
+Por defecto, `v-model` en un componente usa `value` como una prop de `input` como el evento, pero algunos tipos de entrada como los checkboxes y radio buttons pueden querer usar el atributo `value` para un [propósito diferente](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox#Value). Usando la opción `model` puede evitar conflictos en estos casos:
 
 ```js
 Vue.component('base-checkbox', {
