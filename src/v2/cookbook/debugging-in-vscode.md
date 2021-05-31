@@ -23,6 +23,7 @@ así como también la última versión de la extensión de depuración que corre
 
 * [Depurador para Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 * [Depurador para Firefox](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug)
+* [Depurador para Edge](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-edge)
 
 Instale y cree un proyecto con [vue-cli](https://github.com/vuejs/vue-cli), siguiendo las instrucciones en [Guía Vue CLI](https://cli.vuejs.org/).
 Muévase dentro del directorio de la aplicación recientemente creada y abra VS Code.
@@ -85,6 +86,17 @@ el contenido del archivo `launch.json` generado con la configuración correspond
       "url": "http://localhost:8080",
       "webRoot": "${workspaceFolder}/src",
       "pathMappings": [{ "url": "webpack:///src/", "path": "${webRoot}/" }]
+    },
+    {
+      "type": "edge",
+      "request": "launch",
+      "name": "vuejs: edge Chromium",
+      "version": "canary",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
     }
   ]
 }
@@ -100,7 +112,7 @@ la función `data` devuelve una cadena de texto.
 2. Abra su terminal favorita en la carpeta raíz y corra su aplicación usando Vue CLI:
 
   ```
-  npm start
+  npm run serve
   ```
 
 3. Vaya a la vista de Depuración, seleccione la configuración **'vuejs: chrome/firefox'**,
