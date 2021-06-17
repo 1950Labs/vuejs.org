@@ -144,21 +144,27 @@ El prefijo `v-` sirve como una señal visual para identificar atributos específ
 ### `v-bind` Abreviado
 
 ``` html
-<!-- full syntax -->
+<!-- sintaxis completa -->
 <a v-bind:href="url"> ... </a>
 
 <!-- abreviado -->
 <a :href="url"> ... </a>
+
+<!-- con argumento dinámico (2.6.0+) -->
+<a :[key]="url"> ... </a>
 ```
 
 ### `v-on` Abreviado
 
 ``` html
-<!-- full syntax -->
+<!-- sintaxis completa -->
 <a v-on:click="doSomething"> ... </a>
 
 <!-- abreviado -->
 <a @click="doSomething"> ... </a>
+
+<!-- con argumento dinámico (2.6.0+) -->
+<a @[event]="doSomething"> ... </a>
 ```
 
 Pueden parecer un poco diferentes del HTML normal, pero `:` y `@` son caracteres válidos para los nombres de atributos y todos los navegadores compatibles con Vue.js pueden analizarlo correctamente. Además, no aparecen en el marcado final renderizado. La sintaxis abreviada es totalmente opcional, pero es probable que la aprecie cuando sepa más sobre su uso más adelante.
