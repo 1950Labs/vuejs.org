@@ -342,7 +342,7 @@ new Vue({
 </script>
 {% endraw %}
 
-### Usando Animaciones y Trancisiones Juntas
+### Usando Animaciones y Transiciones Juntas
 
 Vue necesita agregar *listeners* de eventos para poder saber cuándo una transición ha finalizado. Puede ser mediante `transitionended` o `animationended`, dependiendo del tipo de reglas CSS aplicadas. Si únicamente está usando la una o la otra, Vue detecta automáticamente el tipo correcto.
 
@@ -588,7 +588,7 @@ Por ejemplo:
 </transition>
 ```
 
-En estos casos, puede también usar el atributo `key` para realizar una trancisión entre estados diferentes del mismo elemento. En vez de usar `v-if` y `v-else`, el ejemplo anterior puede ser re-escrito como:
+En estos casos, puede también usar el atributo `key` para realizar una transición entre estados diferentes del mismo elemento. En vez de usar `v-if` y `v-else`, el ejemplo anterior puede ser re-escrito como:
 
 ``` html
 <transition>
@@ -598,7 +598,8 @@ En estos casos, puede también usar el atributo `key` para realizar una trancisi
 </transition>
 ```
 
-Es posible realizar una transición entre cualquier número de elementos, ya sea usando muchos `v-if`, o asignando una propiedad dinámica a un elemento. Por ejemplo:
+Es posible realizar una 
+ón entre cualquier número de elementos, ya sea usando muchos `v-if`, o asignando una propiedad dinámica a un elemento. Por ejemplo:
 
 ``` html
 <transition>
