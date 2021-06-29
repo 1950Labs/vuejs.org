@@ -98,7 +98,7 @@ Estas expresiones se evaluarán como JavaScript en el ámbito de datos de la ins
 {{ if (ok) { return message } }}
 ```
 
-<p class="tip">Las expresiones de template están en un espacio aislado y solo tienen acceso a una lista blanca de elementos globales como `Matemáticas` y `Fecha`. No debe intentar acceder a globales definidos por el usuario en expresiones de template.</p>
+<p class="tip">Las expresiones de template están en un espacio aislado y solo tienen acceso a una lista blanca de elementos globales como `Math` y `Date`. No debe intentar acceder a globales definidos por el usuario en expresiones de template.</p>
 
 ## Directivas
 
