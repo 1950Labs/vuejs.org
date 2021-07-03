@@ -536,7 +536,7 @@ Todo lo que necesita el componente se pasa a través de `contexto`, que es un ob
 - `props`: Un objeto de las propiedades proporcionadas
 - `children`: Un arreglo de los VNode hijos
 - `slots`: Una función retornando un objeto slots
-- `data`: El objeto entero [objeto data](#The-Data-Object-In-Depth), pasado al componente como segundo argumento de `createElement`
+- `data`: El objeto entero [objeto data](#El-objeto-de-datos-en-profundidad), pasado al componente como segundo argumento de `createElement`
 - `parent`: Una referencia al componente padre
 - `listeners`: (2.3.0+) Un objeto que contiene listeners de eventos registrados por los padres. Este es un alias de `data.on`
 - `injections`: (2.3.0+) si está usando la opción [`inject`](../api/#provide-inject) esto contendrá inyecciones resueltas.
@@ -589,7 +589,7 @@ Vue.component('smart-list', {
 
 ### Pasar atributos y eventos a elementos/componentes hijos
 
-En los componentes normales, los atributos no definidos como propiedades se agregan automáticamente al elemento raíz del componente, reemplazando o [fusionando inteligentemente con](class-and-style.html) cualquier atributo existente del mismo nombre.
+En los componentes normales, los atributos no definidos como propiedades se agregan automáticamente al elemento raíz del componente, reemplazando o [fusionándose inteligentemente con](class-and-style.html) cualquier atributo existente del mismo nombre.
 
 Sin embargo, los componentes funcionales requieren que se defina explícitamente este comportamiento:
 
